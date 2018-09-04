@@ -6,20 +6,20 @@
 
 **option 参数说明:**
 
-| 参数       | 类型     | 是否必填 | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- | :----- |
-| url  | String | 是  | 文件下载地址  | 2.0.0 |
-| name  | String | 否  | 文件保存后的别名, 默认为原文件名 | 2.0.0 |
+| 参数       | 类型     | 是否必填 | 说明 |
+| :----- | :----- | :----- | :----- |
+| url  | String | 是  | 文件下载地址  |
+| name  | String | 否  | 文件保存后的别名, 默认为原文件名 |
 
 **callback 参数说明:**
 
-| 参数       | 类型     | 是否必填 | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- | :----- |
-| onBefore  | Function | 否  |  即将下载回调  | 2.0.0 |
-| onProgress | Function | 否  |  下载中回调  | 2.0.0 |
-| onComplete | Function | 否  |  下载完成回调  | 2.0.0 |
-| onCancel | Function | 否  |  下载取消回调  | 2.0.0 |
-| onError | Function | 否  |  下载失败回调  | 2.0.0 |
+| 参数       | 类型     | 是否必填 | 说明 |
+| :----- | :----- | :----- | :----- |
+| onBefore  | Function | 否  |  即将下载回调  |
+| onProgress | Function | 否  |  下载中回调  |
+| onComplete | Function | 否  |  下载完成回调  |
+| onCancel | Function | 否  |  下载取消回调  |
+| onError | Function | 否  |  下载失败回调  |
 
 **示例代码:**
 
@@ -44,10 +44,10 @@ manager.pause()；
 
 **onBefore 回调参数说明:**
 
-| 参数       | 类型   | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- |
-| total  | String | 文件总大小  | 2.0.0 |
-| path  | String | 文件保存路径 | 2.0.0 |
+| 参数       | 类型   | 说明 |
+| :----- | :----- | :----- |
+| total  | String | 文件总大小  |
+| path  | String | 文件保存路径 |
 
 **示例代码:**
 
@@ -67,11 +67,11 @@ var manager = File.save(option, {
 
 **onProgress 回调参数说明:**
 
-| 参数       | 类型      | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- |
-| loaded  | String | 已下载文件大小  | 2.0.0 |
-| total  | String |  文件总大小  | 2.0.0 |
-| path  | String | 文件保存路径 | 2.0.0 |
+| 参数       | 类型      | 说明 |
+| :----- | :----- | :----- |
+| loaded  | String | 已下载文件大小  |
+| total  | String |  文件总大小  |
+| path  | String | 文件保存路径 |
 
 **示例代码:**
 
@@ -92,11 +92,11 @@ var manager = File.save(option, {
 
 **onComplete 回调参数说明:**
 
-| 参数       | 类型     | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- |
-| loaded  | String  | 已下载文件大小  | 2.0.0 |
-| total  | String  | 文件总大小  | 2.0.0 |
-| path  | String  | 文件保存路径 | 2.0.0 |
+| 参数       | 类型     | 说明 |
+| :----- | :----- | :----- |
+| loaded  | String  | 已下载文件大小  |
+| total  | String  | 文件总大小  |
+| path  | String  | 文件保存路径 |
 
 **示例代码:**
 
@@ -117,11 +117,11 @@ var manager = File.save(option, {
 
 **onCancel 回调参数说明:**
 
-| 参数       | 类型    | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- |
-| loaded  | String | 已下载文件大小  | 2.0.0 |
-| total  | String |  文件总大小  | 2.0.0 |
-| path  | String | 文件保存路径 | 2.0.0 |
+| 参数       | 类型    | 说明 |
+| :----- | :----- | :----- |
+| loaded  | String | 已下载文件大小  |
+| total  | String |  文件总大小  |
+| path  | String | 文件保存路径 |
 
 **示例代码:**
 
@@ -142,10 +142,10 @@ var manager = File.save(option, {
 
 **onError 回调参数说明:**
 
-| 参数       | 类型    | 说明 | 桌面版版本 |
-| :----- | :----- | :----- | :----- |
-| code  | String | 错误码  | 2.0.0 |
-| message  | String |  错误信息  | 2.0.0 |
+| 参数       | 类型    | 说明 |
+| :----- | :----- | :----- |
+| code  | String | 错误码  |
+| message  | String |  错误信息  |
 
 **常见错误码:**
 * ENOTFOUND：DNS 找不到域名. 请检查 1. 域名是否写错 2. 网络连接是否正常
