@@ -1,5 +1,7 @@
 ### Web 下载模块
 
+`Demo`: [https://yonghao0.github.io/web-download/index.html](https://yonghao0.github.io/web-download/index.html)
+
 #### Download.save(option, callback)
 
 保存文件
